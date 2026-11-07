@@ -22,11 +22,11 @@ import numpy as np  # noqa: E402
 import open3d as o3d  # noqa: E402
 from scipy.stats import binomtest  # noqa: E402
 
-import assembly_model as model  # noqa: E402
-import camera_model as cm  # noqa: E402
-import perception  # noqa: E402
-from analyze import wilson  # noqa: E402
-from run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
+from pipeline import assembly_model as model  # noqa: E402
+from pipeline import camera_model as cm  # noqa: E402
+from pipeline import perception  # noqa: E402
+from analysis.analyze import wilson  # noqa: E402
+from pipeline.run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
 
 MAIN_RESULTS = Path("results/main")
 RESULTS = Path("results/other_views")
@@ -72,7 +72,7 @@ def render(task):
         return
     (output_dir / "metadata.json").unlink(missing_ok=True)
     command = [
-        BLENDER, "-b", "--python", "generate_scene.py", "--python-exit-code", "1", "--",
+        BLENDER, "-b", "--python", "pipeline/generate_scene.py", "--python-exit-code", "1", "--",
         "--out", str(output_dir), "--seed", str(scene["seed"]), "--material", scene["material"],
         "--gap-mm", str(scene["gap_mm"]), "--bracket-yaw-deg", str(scene["bracket_yaw_deg"]),
         "--no-rgb", "--ir", "--ir-samples", str(IR_SAMPLES),

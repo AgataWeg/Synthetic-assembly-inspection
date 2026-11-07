@@ -12,8 +12,8 @@ os.environ.setdefault("OMP_NUM_THREADS", "2")
 
 import numpy as np  # noqa: E402
 
-import perception  # noqa: E402
-from run_batch import DATA_DIR  # noqa: E402
+from pipeline import perception  # noqa: E402
+from pipeline.run_batch import DATA_DIR  # noqa: E402
 
 CONDITIONS = ("ideal", "datasheet", "measured", "stereo")
 

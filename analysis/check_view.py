@@ -8,8 +8,8 @@ sys.path.insert(0, ".")
 import numpy as np
 import open3d as o3d
 
-import assembly_model as model
-import perception
+from pipeline import assembly_model as model
+from pipeline import perception
 
 END_LOCAL_X = model.PROFILE_LENGTH_M
 

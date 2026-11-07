@@ -7,9 +7,9 @@ from pathlib import Path
 
 import numpy as np
 
-import camera_model as cm
-import perception
-from run_batch import BLENDER
+from pipeline import camera_model as cm
+from pipeline import perception
+from pipeline.run_batch import BLENDER
 
 OUT_DIR = Path("data/generated/validation")
 MATTE_DISTANCES_M = (0.3, 0.45, 0.6, 0.8, 1.0)
@@ -24,7 +24,7 @@ def render(name, distance, tilt, material, samples):
     output_dir = OUT_DIR / name
     if not (output_dir / "metadata.json").exists():
         command = [
-            BLENDER, "-b", "--python", "generate_scene.py", "--python-exit-code", "1", "--",
+            BLENDER, "-b", "--python", "pipeline/generate_scene.py", "--python-exit-code", "1", "--",
             "--out", str(output_dir), "--seed", "7", "--material", material, "--no-rgb", "--ir",
             "--ir-samples", str(samples), "--plane-distance", str(distance), "--plane-tilt-deg", str(tilt),
         ]

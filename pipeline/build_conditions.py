@@ -5,8 +5,8 @@ from concurrent.futures import ProcessPoolExecutor
 
 import numpy as np
 
-import camera_model as cm
-from run_batch import DATA_DIR
+from pipeline import camera_model as cm
+from pipeline.run_batch import DATA_DIR
 
 STEREO_MATCHER = "sgbm"  # Frozen from the flat-target validation in validate_camera.py.
 SEED_OFFSETS = {"datasheet": 1, "measured": 2, "stereo": 3}

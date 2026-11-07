@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 from scipy.stats import norm  # noqa: E402
 
-from run_batch import DATA_DIR, GAP_LEVELS_MM, YAW_LEVELS_DEG  # noqa: E402
+from pipeline.run_batch import DATA_DIR, GAP_LEVELS_MM, YAW_LEVELS_DEG  # noqa: E402
 
 MAIN_RESULTS = Path("results/main")
 FIGURES = Path("results/figures")

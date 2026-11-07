@@ -11,7 +11,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
-from run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
+from pipeline.run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
 
 OUT_DIR = Path("data/generated/examples")
 FIGURE = Path("results/figures/fig_scene.png")
@@ -28,7 +28,7 @@ def render(scene):
     if (output_dir / "metadata.json").exists():
         return
     command = [
-        BLENDER, "-b", "--python", "generate_scene.py", "--python-exit-code", "1", "--",
+        BLENDER, "-b", "--python", "pipeline/generate_scene.py", "--python-exit-code", "1", "--",
         "--out", str(output_dir), "--seed", str(scene["seed"]), "--material", scene["material"],
         "--gap-mm", str(scene["gap_mm"]), "--bracket-yaw-deg", str(scene["bracket_yaw_deg"]),
         "--rgb-samples", str(RGB_SAMPLES),

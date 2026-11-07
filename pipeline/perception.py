@@ -9,7 +9,7 @@ import numpy as np
 import open3d as o3d
 from scipy.spatial import cKDTree
 
-import assembly_model as model
+from pipeline import assembly_model as model
 
 MODEL_SPACING_M = 0.0007
 TABLE_THRESHOLD_M = 0.003

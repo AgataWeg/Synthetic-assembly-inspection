@@ -129,7 +129,7 @@ def main():
         # A partial scene must not look finished if this render is interrupted.
         (output_dir / "metadata.json").unlink(missing_ok=True)
         command = [
-            BLENDER, "-b", "--python", "generate_scene.py", "--python-exit-code", "1", "--",
+            BLENDER, "-b", "--python", "pipeline/generate_scene.py", "--python-exit-code", "1", "--",
             "--out", str(output_dir), "--seed", str(scene["seed"]), "--material", scene["material"],
             "--gap-mm", str(scene["gap_mm"]), "--bracket-yaw-deg", str(scene["bracket_yaw_deg"]),
         ]

@@ -11,9 +11,9 @@ sys.path.insert(0, ".")
 import numpy as np
 from scipy.stats import binomtest, fisher_exact
 
-import assembly_model as model
-import perception
-from run_batch import DATA_DIR
+from pipeline import assembly_model as model
+from pipeline import perception
+from pipeline.run_batch import DATA_DIR
 
 GAP, YAW = 1.0, 1.0
 

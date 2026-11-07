@@ -11,8 +11,9 @@ import bpy
 import numpy as np
 from mathutils import Matrix, Vector
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import assembly_model as model  # noqa: E402
+# Blender runs this file directly, so the project folder is added for the pipeline package.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from pipeline import assembly_model as model  # noqa: E402
 
 LABELS = {"profile": 1, "bracket": 2, "table": 3, "fixture": 4}
 CAMERA_DISTANCE_M = 0.45

@@ -11,9 +11,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 
-import assembly_model as model  # noqa: E402
-from run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
-from second_view import VIEWS  # noqa: E402
+from pipeline import assembly_model as model  # noqa: E402
+from pipeline.run_batch import BLENDER, DATA_DIR, build_manifest  # noqa: E402
+from analysis.second_view import VIEWS  # noqa: E402
 
 SCENE = "gap_2mm_000"
 OUT_DIR = Path("data/generated/examples")
@@ -34,7 +34,7 @@ def render(scene, view_name):
     if (output_dir / "rgb.png").exists():
         return output_dir
     command = [
-        BLENDER, "-b", "--python", "generate_scene.py", "--python-exit-code", "1", "--",
+        BLENDER, "-b", "--python", "pipeline/generate_scene.py", "--python-exit-code", "1", "--",
         "--out", str(output_dir), "--seed", str(scene["seed"]), "--material", scene["material"],
         "--gap-mm", str(scene["gap_mm"]), "--bracket-yaw-deg", str(scene["bracket_yaw_deg"]),
         "--rgb-samples", str(RGB_SAMPLES),

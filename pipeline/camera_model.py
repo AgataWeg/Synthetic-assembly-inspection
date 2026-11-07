@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 from scipy.ndimage import binary_dilation, gaussian_filter
 
-import assembly_model as model
+from pipeline import assembly_model as model
 
 # Subpixel value Intel's tuning guide uses for its theoretical D415 depth error curve
 # ("Tuning depth cameras for best performance").
