@@ -1,0 +1,55 @@
+--- 1. analytic gap errors: same scene, same cluster?
+corr datasheet-measured 0.8220716463097962 datasheet-stereo -0.033108149978990094
+datasheet histogram edges -1.5..0.75 step .25: [0, 0, 6, 33, 1, 65, 8, 2, 0]
+measured  histogram: [0, 35, 11, 1, 10, 57, 1, 0, 0]
+scenes in low cluster: datasheet 40 measured 46 both 40 of 115
+--- 2. which part moves along the profile axis (good test scenes)
+ideal gap err vs profile dx corr 1.0 vs bracket dx -0.47 | profile dx mean/sd -0.0 0.0 | bracket dx mean/sd 0.0 0.0
+datasheet gap err vs profile dx corr 1.0 vs bracket dx 0.2 | profile dx mean/sd -0.21 0.35 | bracket dx mean/sd 0.01 0.01
+measured gap err vs profile dx corr 0.99 vs bracket dx 0.36 | profile dx mean/sd -0.47 0.47 | bracket dx mean/sd 0.16 0.08
+stereo gap err vs profile dx corr 0.48 vs bracket dx -0.97 | profile dx mean/sd 0.46 0.39 | bracket dx mean/sd 0.89 1.54
+--- 3. end-face pixels vs cluster, measured condition
+end_low mean 113.5 min 95.0 corr with gap error -0.75
+end_high mean 1104.1 min 278.0 corr with gap error 0.85
+end_low_valid mean 99.6 min 74.0 corr with gap error -0.59
+end_high_valid mean 510.8 min 10.0 corr with gap error 0.87
+camera position sample [0.18476854264736176, -0.21619361639022827, 0.3609714210033417] azimuth range -57.7 -40.8
+corr gap err vs azimuth 0.7 vs elevation -0.55
+low cluster n 19 end_low_valid low/high cluster 105.3 94.5 end_high_valid 46.1 931.4
+elevation low/high cluster 55.3 51.7 azimuth -53.9 -47.3
+--- 4. stereo: right and wrong alarms
+gap 0.5: alarms 9/15, failed 2, measured within 1 mm of truth 5; true gap min 0.502
+gap 1.0: alarms 9/15, failed 2, measured within 1 mm of truth 7; true gap min 1.000
+gap 2.0: alarms 15/15, failed 1, measured within 1 mm of truth 12; true gap min 2.001
+gap 3.0: alarms 15/15, failed 2, measured within 1 mm of truth 12; true gap min 3.004
+gap 5.0: alarms 15/15, failed 2, measured within 1 mm of truth 9; true gap min 5.003
+yaw 1.0: alarms 5/15, failed 1, within 1 deg 1, misses at >=2 deg -
+yaw 2.0: alarms 14/15, failed 3, within 1 deg 9, misses at >=2 deg [('yaw_2deg_002', 0.98, 1.87)]
+yaw 4.0: alarms 14/15, failed 1, within 1 deg 8, misses at >=2 deg [('yaw_4deg_014', -0.45, 4.01)]
+good scenes: failed 2 gap-only 7 yaw-only 7 any 15
+good scenes alarming: Carfagni 14 stereo 15 both 4
+in-tolerance false rejects, gap 0.5 vs good, Fisher p: 0.02131554649634014
+--- 5. stereo: bracket PCA seed used vs not (aluminium test scenes)
+seed rejected 133 yaw |err| median 0.58 p90 1.99 gap median 0.52 p90 1.45 failed 11
+seed accepted 27 yaw |err| median 0.68 p90 1.95 gap median 0.61 p90 2.25 failed 5
+failed: seed accepted 5 of 16 fill 0.706 others fill 0.69
+error vs fill corr (gap, yaw): 0.06 0.14
+--- 6. twins: matte vs aluminium on good scenes
+gap alarm only aluminium 7 only matte 0 both 0 McNemar exact p 0.01562
+any alarm only aluminium 8 only matte 0 both 0 McNemar exact p 0.00781
+matte gap error mean/sd 0.455 0.324 yaw mean/sd 0.022 0.303
+matte any alarm on good: 0 of 20
+--- 7. depth residuals, stereo minus ideal, mm
+aluminium profile {'fill': 0.691, 'median': 1.025, 'mad_sd': 4.262, 'over5': 0.343, 'over20': 0.046}
+aluminium bracket {'fill': 0.475, 'median': -0.331, 'mad_sd': 3.07, 'over5': 0.237, 'over20': 0.049}
+aluminium table {'fill': 0.774, 'median': 1.289, 'mad_sd': 1.896, 'over5': 0.23, 'over20': 0.196}
+matte profile {'fill': 0.983, 'median': -0.043, 'mad_sd': 1.311, 'over5': 0.07, 'over20': 0.002}
+matte bracket {'fill': 0.998, 'median': -0.189, 'mad_sd': 1.477, 'over5': 0.034, 'over20': 0.003}
+matte table {'fill': 0.771, 'median': 1.581, 'mad_sd': 1.975, 'over5': 0.242, 'over20': 0.196}
+--- 8. ideal-tuned threshold check: gap detection at stereo-tuned threshold
+0.5 4 of 15
+1.0 6 of 15
+2.0 12 of 15
+3.0 15 of 15
+5.0 15 of 15
+threshold 1.5070810267270862

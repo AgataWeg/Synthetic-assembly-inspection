@@ -1,0 +1,82 @@
+{
+ "scenes": 40,
+ "variants": {
+  "all effects (Carfagni)": {
+   "gap_mean_mm": -0.6349566781103377,
+   "gap_sd_mm": 0.44807241582455076,
+   "low_cluster_scenes": 19,
+   "yaw_mean_deg": -0.36363883622607573,
+   "yaw_sd_deg": 0.16491269223866217,
+   "gap_alarms": 13,
+   "yaw_alarms": 0
+  },
+  "noise only": {
+   "gap_mean_mm": -0.13736564191402095,
+   "gap_sd_mm": 0.08900859328218948,
+   "low_cluster_scenes": 0,
+   "yaw_mean_deg": -0.23642614596016828,
+   "yaw_sd_deg": 0.10238334613602557,
+   "gap_alarms": 0,
+   "yaw_alarms": 0
+  },
+  "no edge band": {
+   "gap_mean_mm": -0.1426347437073018,
+   "gap_sd_mm": 0.08892533161526088,
+   "low_cluster_scenes": 0,
+   "yaw_mean_deg": -0.23188022223330834,
+   "yaw_sd_deg": 0.10520172892122516,
+   "gap_alarms": 0,
+   "yaw_alarms": 0
+  },
+  "noise and edge band": {
+   "gap_mean_mm": -0.6306664150325245,
+   "gap_sd_mm": 0.45014414441630884,
+   "low_cluster_scenes": 19,
+   "yaw_mean_deg": -0.37154554989048905,
+   "yaw_sd_deg": 0.1433242616918531,
+   "gap_alarms": 14,
+   "yaw_alarms": 0
+  },
+  "holes only": {
+   "gap_mean_mm": -0.1108802349503231,
+   "gap_sd_mm": 0.2182201240734773,
+   "low_cluster_scenes": 2,
+   "yaw_mean_deg": -0.000417193591649586,
+   "yaw_sd_deg": 0.00026752518479389537,
+   "gap_alarms": 0,
+   "yaw_alarms": 0
+  }
+ },
+ "aluminium_good_twins_stereo_part_offsets": {
+  "profile_dx_mm": {
+   "mean_mm": 0.33428766079023897,
+   "sd_mm": 0.43074652977973366
+  },
+  "bracket_dx_mm": {
+   "mean_mm": 1.1707607777736466,
+   "sd_mm": 2.079381958088938
+  }
+ },
+ "matte_good_twins_stereo_part_offsets": {
+  "profile_dx_mm": {
+   "mean_mm": 0.7324355735830783,
+   "sd_mm": 0.25693712616672376
+  },
+  "bracket_dx_mm": {
+   "mean_mm": 0.3916469996982523,
+   "sd_mm": 0.1743894536442679
+  }
+ },
+ "stereo_table_residual": {
+  "near_parts": {
+   "median_mm": 0.9529925882816315,
+   "over_20mm": 0.00022716059421842312,
+   "fill": 0.9881119441830493
+  },
+  "whole_image": {
+   "median_mm": 1.2956704944372177,
+   "over_20mm": 0.19520167327867782,
+   "fill": 0.7724973376644407
+  }
+ }
+}

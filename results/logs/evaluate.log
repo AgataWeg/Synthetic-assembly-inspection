@@ -1,0 +1,63 @@
+=== ideal ===
+Measured 180 scenes in 284 s
+group            n  gap err mean  gap err sd  yaw err mean  yaw err sd   fill
+good            60     -0.003 mm    0.004 mm    -0.000 deg   0.000 deg   1.00
+gap 0.5 mm      15     -0.002 mm    0.005 mm     0.000 deg   0.000 deg   1.00
+gap 1 mm        15     -0.001 mm    0.001 mm    -0.000 deg   0.000 deg   1.00
+gap 2 mm        15     -0.003 mm    0.006 mm    -0.000 deg   0.000 deg   1.00
+gap 3 mm        15     -0.002 mm    0.004 mm     0.000 deg   0.000 deg   1.00
+gap 5 mm        15     -0.002 mm    0.004 mm    -0.000 deg   0.000 deg   1.00
+yaw 1 deg       15     -0.002 mm    0.002 mm    -0.000 deg   0.000 deg   1.00
+yaw 2 deg       15      0.017 mm    0.067 mm    -0.000 deg   0.000 deg   1.00
+yaw 4 deg       15     -0.001 mm    0.001 mm     0.000 deg   0.000 deg   1.00
+Failed measurements: 0 of 180 scenes
+PCA fallbacks: 180 of 180 scenes
+Profile information ratio, next/weakest direction: median 27.9
+=== datasheet ===
+Measured 180 scenes in 278 s
+group            n  gap err mean  gap err sd  yaw err mean  yaw err sd   fill
+good            60     -0.200 mm    0.342 mm    -0.013 deg   0.021 deg   0.81
+gap 0.5 mm      15     -0.252 mm    0.298 mm    -0.002 deg   0.019 deg   0.80
+gap 1 mm        15     -0.181 mm    0.288 mm    -0.017 deg   0.022 deg   0.81
+gap 2 mm        15     -0.316 mm    0.322 mm    -0.010 deg   0.016 deg   0.80
+gap 3 mm        15     -0.211 mm    0.336 mm    -0.016 deg   0.023 deg   0.80
+gap 5 mm        15     -0.221 mm    0.302 mm    -0.017 deg   0.020 deg   0.80
+yaw 1 deg       15     -0.149 mm    0.272 mm    -0.017 deg   0.014 deg   0.80
+yaw 2 deg       15     -0.210 mm    0.330 mm    -0.005 deg   0.019 deg   0.80
+yaw 4 deg       15     -0.066 mm    0.255 mm    -0.008 deg   0.019 deg   0.80
+Failed measurements: 0 of 180 scenes
+PCA fallbacks: 180 of 180 scenes
+Profile information ratio, next/weakest direction: median 39.7
+=== measured ===
+Measured 180 scenes in 443 s
+group            n  gap err mean  gap err sd  yaw err mean  yaw err sd   fill
+good            60     -0.628 mm    0.441 mm    -0.412 deg   0.172 deg   0.81
+gap 0.5 mm      15     -0.544 mm    0.447 mm    -0.381 deg   0.145 deg   0.80
+gap 1 mm        15     -0.425 mm    0.393 mm    -0.501 deg   0.167 deg   0.81
+gap 2 mm        15     -0.604 mm    0.409 mm    -0.412 deg   0.238 deg   0.80
+gap 3 mm        15     -0.406 mm    0.435 mm    -0.403 deg   0.182 deg   0.80
+gap 5 mm        15     -0.468 mm    0.435 mm    -0.403 deg   0.150 deg   0.80
+yaw 1 deg       15     -0.519 mm    0.409 mm    -0.366 deg   0.177 deg   0.80
+yaw 2 deg       15     -0.517 mm    0.507 mm    -0.384 deg   0.199 deg   0.80
+yaw 4 deg       15     -0.476 mm    0.419 mm    -0.362 deg   0.199 deg   0.80
+Failed measurements: 0 of 180 scenes
+PCA fallbacks: 180 of 180 scenes
+Profile information ratio, next/weakest direction: median 38.1
+=== stereo ===
+Measured 220 scenes in 793 s
+group            n  gap err mean  gap err sd  yaw err mean  yaw err sd   fill
+good            60     -0.360 mm    1.521 mm    -0.202 deg   2.114 deg   0.68
+gap 0.5 mm      15     -0.447 mm    2.571 mm    -0.151 deg   0.934 deg   0.69
+gap 1 mm        15     -0.859 mm    2.644 mm     0.246 deg   0.665 deg   0.71
+gap 2 mm        15     -0.108 mm    0.883 mm    -0.975 deg   1.708 deg   0.69
+gap 3 mm        15     -0.745 mm    2.144 mm    -1.444 deg   3.929 deg   0.68
+gap 5 mm        15      0.253 mm    0.723 mm    -0.380 deg   1.266 deg   0.69
+yaw 1 deg       15      0.342 mm    0.787 mm    -0.095 deg   0.874 deg   0.68
+yaw 2 deg       15     -0.769 mm    1.515 mm    -0.338 deg   1.368 deg   0.69
+yaw 4 deg       15     -0.488 mm    1.452 mm    -1.234 deg   2.865 deg   0.72
+matte good      20      0.341 mm    0.314 mm    -0.022 deg   0.295 deg   0.98
+matte gap 1 mm  10      0.493 mm    0.239 mm     0.107 deg   0.364 deg   0.98
+matte gap 2 mm  10      0.646 mm    0.301 mm     0.025 deg   0.201 deg   0.98
+Failed measurements: 18 of 220 scenes
+PCA fallbacks: 190 of 220 scenes
+Profile information ratio, next/weakest direction: median 12.3

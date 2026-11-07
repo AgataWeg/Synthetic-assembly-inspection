@@ -1,0 +1,90 @@
+{
+  "view": "mirror",
+  "azimuth_range_deg": [
+    42.0,
+    58.0
+  ],
+  "elevation_range_deg": [
+    46.0,
+    58.0
+  ],
+  "elevation_measured_deg": [
+    46.16881926363609,
+    57.007542332602796
+  ],
+  "end_face_samples_min_max": [
+    2288,
+    2288
+  ],
+  "view_ideal": {
+    "false_alarms_any": 0,
+    "false_alarms_any_wilson_95": [
+      0.0,
+      0.16112515805281938
+    ],
+    "false_alarms_gap": 0,
+    "false_alarms_yaw": 0,
+    "good_scenes": 20,
+    "detected_2mm": 15,
+    "detected_2mm_accurate": 15,
+    "gap_scenes": 15,
+    "failed": 0,
+    "scenes": 35,
+    "gap_error_mean_mm": -0.0025168358291471618,
+    "gap_error_sd_mm": 0.004642721360949773,
+    "gap_error_abs_median_mm": 0.001058943914125643,
+    "yaw_error_mean_deg": 0.0001258285266358655,
+    "yaw_error_sd_deg": 0.0001680151942981247,
+    "yaw_error_abs_median_deg": 9.347392815597932e-05,
+    "part_fill_mean": 1.0
+  },
+  "view_stereo": {
+    "false_alarms_any": 18,
+    "false_alarms_any_wilson_95": [
+      0.6989663547715128,
+      0.9721335187862319
+    ],
+    "false_alarms_gap": 16,
+    "false_alarms_yaw": 11,
+    "good_scenes": 20,
+    "detected_2mm": 15,
+    "detected_2mm_accurate": 4,
+    "gap_scenes": 15,
+    "failed": 6,
+    "scenes": 35,
+    "gap_error_mean_mm": 1.2131530135754016,
+    "gap_error_sd_mm": 2.887913470174053,
+    "gap_error_abs_median_mm": 2.0685393648209733,
+    "yaw_error_mean_deg": 0.11268278512064378,
+    "yaw_error_sd_deg": 1.8376815352149323,
+    "yaw_error_abs_median_deg": 0.8534985743845409,
+    "part_fill_mean": 0.6404113487567406
+  },
+  "main_view_stereo_same_scenes": {
+    "false_alarms_any": 8,
+    "false_alarms_any_wilson_95": [
+      0.21880653237281705,
+      0.6134184992377469
+    ],
+    "false_alarms_gap": 7,
+    "false_alarms_yaw": 3,
+    "good_scenes": 20,
+    "detected_2mm": 15,
+    "detected_2mm_accurate": 12,
+    "gap_scenes": 15,
+    "failed": 2,
+    "scenes": 35,
+    "gap_error_mean_mm": -0.531120715778228,
+    "gap_error_sd_mm": 1.8401218596644506,
+    "gap_error_abs_median_mm": 0.5010189116977926,
+    "yaw_error_mean_deg": -0.7130979628416624,
+    "yaw_error_sd_deg": 2.7166308089545548,
+    "yaw_error_abs_median_deg": 0.7888796360803374,
+    "part_fill_mean": 0.678084063084768
+  },
+  "paired_false_alarms": {
+    "only_this_view": 11,
+    "only_main": 1,
+    "mcnemar_exact_p": 0.00634765625
+  }
+}

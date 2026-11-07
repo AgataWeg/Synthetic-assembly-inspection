@@ -1,0 +1,116 @@
+[1/35] good_test_000
+[2/35] good_test_001
+[3/35] good_test_002
+[4/35] good_test_003
+[5/35] good_test_004
+[6/35] good_test_005
+[7/35] good_test_006
+[8/35] good_test_007
+[9/35] good_test_008
+[10/35] good_test_009
+[11/35] good_test_010
+[12/35] good_test_011
+[13/35] good_test_012
+[14/35] good_test_013
+[15/35] good_test_014
+[16/35] good_test_015
+[17/35] good_test_016
+[18/35] good_test_017
+[19/35] good_test_018
+[20/35] good_test_019
+[21/35] gap_2mm_000
+[22/35] gap_2mm_001
+[23/35] gap_2mm_002
+[24/35] gap_2mm_003
+[25/35] gap_2mm_004
+[26/35] gap_2mm_005
+[27/35] gap_2mm_006
+[28/35] gap_2mm_007
+[29/35] gap_2mm_008
+[30/35] gap_2mm_009
+[31/35] gap_2mm_010
+[32/35] gap_2mm_011
+[33/35] gap_2mm_012
+[34/35] gap_2mm_013
+[35/35] gap_2mm_014
+{
+ "elevation_range_deg": [
+  68.0,
+  78.0
+ ],
+ "elevation_measured_deg": [
+  68.14067738970458,
+  77.17295456643504
+ ],
+ "steep_ideal": {
+  "false_alarms_any": 0,
+  "false_alarms_any_wilson_95": [
+   0.0,
+   0.16112515805281938
+  ],
+  "false_alarms_gap": 0,
+  "false_alarms_yaw": 0,
+  "good_scenes": 20,
+  "detected_2mm": 0,
+  "detected_2mm_accurate": 0,
+  "gap_scenes": 15,
+  "failed": 0,
+  "scenes": 35,
+  "gap_error_mean_mm": -0.8888141383163742,
+  "gap_error_sd_mm": 0.994445333148441,
+  "gap_error_abs_median_mm": 0.3192794302941393,
+  "yaw_error_mean_deg": -0.00010110619533498052,
+  "yaw_error_sd_deg": 0.00026304154924643316,
+  "yaw_error_abs_median_deg": 0.0001294399554030573,
+  "part_fill_mean": 1.0
+ },
+ "steep_stereo": {
+  "false_alarms_any": 9,
+  "false_alarms_any_wilson_95": [
+   0.2581978582556243,
+   0.6579146575496577
+  ],
+  "false_alarms_gap": 3,
+  "false_alarms_yaw": 8,
+  "good_scenes": 20,
+  "detected_2mm": 4,
+  "detected_2mm_accurate": 0,
+  "gap_scenes": 15,
+  "failed": 2,
+  "scenes": 35,
+  "gap_error_mean_mm": -1.2182782451675347,
+  "gap_error_sd_mm": 1.7196385237897867,
+  "gap_error_abs_median_mm": 1.415119086743022,
+  "yaw_error_mean_deg": -0.5508687378524463,
+  "yaw_error_sd_deg": 1.9938982682249364,
+  "yaw_error_abs_median_deg": 1.0026944265653985,
+  "part_fill_mean": 0.7031405109489639
+ },
+ "main_view_stereo_same_scenes": {
+  "false_alarms_any": 8,
+  "false_alarms_any_wilson_95": [
+   0.21880653237281705,
+   0.6134184992377469
+  ],
+  "false_alarms_gap": 7,
+  "false_alarms_yaw": 3,
+  "good_scenes": 20,
+  "detected_2mm": 15,
+  "detected_2mm_accurate": 12,
+  "gap_scenes": 15,
+  "failed": 2,
+  "scenes": 35,
+  "gap_error_mean_mm": -0.531120715778228,
+  "gap_error_sd_mm": 1.8401218596644506,
+  "gap_error_abs_median_mm": 0.5010189116977926,
+  "yaw_error_mean_deg": -0.7130979628416624,
+  "yaw_error_sd_deg": 2.7166308089545548,
+  "yaw_error_abs_median_deg": 0.7888796360803374,
+  "part_fill_mean": 0.678084063084768
+ },
+ "paired_false_alarms": {
+  "only_steep": 6,
+  "only_main": 5,
+  "mcnemar_exact_p": 1.0
+ }
+}

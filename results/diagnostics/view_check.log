@@ -1,0 +1,8 @@
+main elevation 46.2 57.0 | visible end-face samples min/median/max 2288 2288.0 2288 | scenes with none 0 of 35 | camera past the end plane by mm, min/median/max 13.0 51.0 98.0
+steep elevation 68.1 77.2 | visible end-face samples min/median/max 0 0.0 0 | scenes with none 35 of 35 | camera past the end plane by mm, min/median/max -64.0 -42.0 -6.0
+ideal good_test gap reading mean -0.023 sd 0.224 min -0.552 max 0.395
+ideal gap gap reading mean 0.056 sd 0.251 min -0.351 max 0.426
+stereo good_test gap reading mean -0.524 sd 0.899 min -3.086 max 0.538
+stereo gap gap reading mean -0.045 sd 2.155 min -3.31 max 6.741
+failed gap_2mm_002
+failed gap_2mm_006

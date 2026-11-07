@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+*.blend1
+data/generated/
+papers/
+.claude/
+results/old_method/
